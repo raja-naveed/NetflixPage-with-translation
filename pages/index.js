@@ -1,6 +1,7 @@
 // pages/index.js
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import i18n from "@/i18n";
+import { TITLE_NAME } from "@/lib/constants";
 import Head from "next/head";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -16,7 +17,7 @@ const Home = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       <Head>
-        <title>Netflix Clone</title>
+        <title>{TITLE_NAME} || Home Page</title>
         <meta name="description" content="Netflix Clone" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
